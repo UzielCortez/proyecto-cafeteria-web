@@ -3,5 +3,5 @@ Proyecto colaborativo desarrollado en equipo para la materia de Programación pa
 
 Equipo 3:
 - Ricardo Uziel Cortez Ruiz
-- Integrante 2
+- Luis Fernando Clavel Pizaña
 - Integrante 3
