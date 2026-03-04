@@ -1,151 +1,423 @@
-* {}
-
-body {}
-
-.main {}
-
-
-/* Header */
-
-.header {}
-
-.contenedor_header {}
-
-.marca {}
-
-.logo_marca {}
-
-.texto_marca {}
-
-.nombre_marca {}
-
-.slogan_marca {}
-
-
-/* Fecha y hora */
-
-.datetime {}
-
-.etiqueta_datetime {}
-
-.valor_datetime {}
-
-/* Menú */
-
-.elementos {}
-
-.menu {}
-
-.item_menu {}
-
-.link_menu {}
-
-
-/* Sección principal */
-
-.principal {}
-
-.contenedor_principal {}
-
-.contenido_principal {}
-
-.titulo_principal {}
-
-.texto_principal {}
-
-
-/* Etiquetas */
-
-.etiquetas_principal {}
-
-.etiqueta {}
-
-
-/* Botónes principales */
-
-.links_principal {}
-
-.boton_ubicacion {}
-
-.boton_galeria {}
-
-
-/* Información lateral */
-
-.informacion_principal {}
-
-.titulo_informacion_principal {}
-
-.lista_informacion {}
-
-
-/* Contenedor general */
-
-.contenedor_main {}
-
-.seccion {}
-
-.header_seccion {}
-
-.titulo_seccion {}
-
-.subtitulo_seccion {}
-
-.bloque {}
-
-
-/* Slider */
-
-.slider {}
-
-
-/* Tarjeta de ubicación */
-
-.tarjeta_ubicacion {}
-
-.tarjeta_body {}
-
-.titulo_tarjeta {}
-
-.texto_tarjeta {}
-
-
-/* Horarios */
-
-.horarios {}
-
-.titulo_horarios {}
-
-.lista_horarios {}
-
-
-/* Información extra */
-
-.extras {}
-
-
-/* Mapa */
-
-.tarjeta_mapa {}
-
-.frame_mapa {}
-
-
-/* Footer */
-
-.footer {}
-
-.contenedor_footer {}
-
-.izquierda_footer {}
-
-.marca_footer {}
-
-.pequeno_footer {}
-
-.derecha_footer {}
-
-
-/* Botón para subir */
-
-.btn_arriba {}
+/* ================= RESET ================= */
+
+/* 
+   Reinicio general de estilos.
+   Se eliminan márgenes y paddings por defecto del navegador 
+   y se define la tipografía principal del sitio.
+*/
+* {
+	box-sizing: border-box; /* Incluye padding y border dentro del tamaño total */
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* 
+   Estilos generales del body.
+   Se define el color de fondo, color del texto
+   y el espaciado entre líneas.
+*/
+body {
+	background-color: #f5f1eb;
+	color: #1a1a1a;
+	line-height: 1.6;
+}
+/* ================= HEADER ================= */
+/*
+   Estilo principal del encabezado.
+   Fondo blanco con una línea inferior decorativa.
+*/
+.header {
+	background-color: #ffffff;
+	border-bottom: 2px solid #e8e1d8;
+	padding: 20px 0;
+}
+
+/*
+   Contenedor interno del header.
+   Se usa flexbox para acomodar logo, fecha y menú.
+*/
+.contenedor_header {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+/*
+   Agrupa logo y texto de la marca.
+*/
+.marca {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+/*
+   Nombre principal del café.
+*/
+.nombre_marca {
+	font-size: 28px;
+	font-weight: 700;
+	color: #6f4e37;
+}
+
+/*
+   Slogan pequeño debajo del nombre.
+*/
+.slogan_marca {
+	font-size: 14px;
+	color: #777;
+}
+/* ================= FECHA Y HORA ================= */
+/*
+   Texto general de fecha y hora.
+*/
+.datetime {
+	font-size: 14px;
+	color: #444;
+}
+
+/*
+   Parte destacada (valor dinámico).
+*/
+.valor_datetime {
+	font-weight: 600;
+	color: #6f4e37;
+}
+/* ================= MENÚ ================= */
+
+/*
+   Lista horizontal de navegación.
+*/
+.menu {
+	list-style: none; /* Quita los puntos */
+	display: flex;
+	gap: 25px;
+}
+
+/*
+   Estilo de los enlaces del menú.
+   Se eliminan subrayados y colores morados por defecto.
+*/
+.link_menu,
+.link_menu:visited,
+.link_menu:active {
+	text-decoration: none;
+	color: #1a1a1a;
+	font-weight: 500;
+	transition: 0.3s;
+}
+
+/*
+   Efecto al pasar el mouse.
+*/
+.link_menu:hover {
+	color: #b08968;
+}
+/* ================= SECCIÓN PRINCIPAL ================= */
+
+/*
+   Espaciado general de la sección principal (hero).
+*/
+.principal {
+	padding: 60px 20px;
+}
+
+/*
+   Contenedor que organiza el contenido principal 
+   y la información lateral usando flexbox.
+*/
+.contenedor_principal {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+}
+
+/*
+   Título principal destacado.
+*/
+.titulo_principal {
+	font-size: 32px;
+	margin-bottom: 20px;
+	color: #6f4e37;
+}
+
+/*
+   Texto descriptivo debajo del título.
+*/
+.texto_principal {
+	margin-bottom: 20px;
+}
+/* ================= CONTENEDOR GENERAL ================= */
+
+.contenedor_main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+/* ================= ETIQUETAS ================= */
+
+/*
+   Contenedor de etiquetas (Wi-Fi, Pet friendly, etc.).
+*/
+.etiquetas_principal {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+/*
+   Diseño individual de cada etiqueta.
+*/
+.etiqueta {
+	background-color: #b08968;
+	color: white;
+	padding: 5px 12px;
+	border-radius: 20px;
+	font-size: 13px;
+}
+/* ================= BOTONES ================= */
+
+/*
+   Contenedor de botones principales.
+*/
+.links_principal {
+	display: flex;
+	gap: 15px;
+}
+
+/*
+   Estilo base de botones (ubicación y galería).
+*/
+.boton_ubicacion,
+.boton_galeria {
+	background-color: #6f4e37;
+	color: white;
+	padding: 10px 18px;
+	border-radius: 6px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+/*
+   Efecto hover para dar sensación interactiva.
+*/
+.boton_ubicacion:hover,
+.boton_galeria:hover {
+	background-color: #b08968;
+}
+/* ================= INFORMACIÓN LATERAL ================= */
+
+/*
+   Tarjeta con datos rápidos del café.
+*/
+.informacion_principal {
+	background: #ffffff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+	flex: 1;
+}
+/* ================= SLIDER ================= */
+
+/*
+   Lista que contiene las imágenes del slider.
+   Se eliminan estilos por defecto.
+*/
+.slider {
+	list-style: none;
+	padding: 0;
+	margin: 40px auto;
+}
+
+/*
+   Imágenes del slider.
+   Se ajustan al ancho del contenedor y mantienen proporción.
+   object-fit: contain evita que se recorten.
+*/
+.slider img {
+	width: 100%;
+	max-height: 500px;
+	object-fit: contain;
+	background: #000; /* Fondo para que no se vea vacío */
+}
+
+/*
+   Estilos aplicados al contenedor generado por bxSlider.
+   Se centra y se le agrega sombra y bordes redondeados.
+*/
+.bx-wrapper {
+	max-width: 1000px !important;
+	margin: 0 auto 40px auto !important;
+	box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+	border-radius: 12px;
+	border: none !important;
+}
+
+/*
+   Redondea las imágenes dentro del slider.
+*/
+.bx-wrapper img {
+	border-radius: 12px;
+}
+/* ================= TARJETA UBICACIÓN ================= */
+
+/*
+   Tarjeta que contiene dirección y horarios.
+*/
+.tarjeta_ubicacion {
+	background: #ffffff;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/*
+   Lista de horarios sin viñetas.
+*/
+.lista_horarios {
+	list-style: none;
+	padding: 0;
+}
+
+/*
+   Alinea día y horario en extremos opuestos.
+*/
+.lista_horarios li {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}
+/* ================= MAPA ================= */
+
+/*
+   Estilo del iframe de Google Maps.
+   Se adapta al ancho del contenedor.
+*/
+.frame_mapa iframe {
+	width: 100%;
+	height: 400px;
+	border-radius: 12px;
+	border: none;
+}
+/* ================= FOOTER ================= */
+
+/*
+   Pie de página del sitio.
+   Fondo oscuro para diferenciarlo del contenido principal.
+*/
+.footer {
+	background-color: #1a1a1a;
+	color: white;
+	padding: 30px 20px;
+}
+
+/*
+   Contenedor interno del footer.
+   Se usa flexbox para distribuir texto y botón.
+*/
+.contenedor_footer {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/*
+   Botón que permite regresar al inicio de la página.
+*/
+.btn_arriba {
+	background-color: #b08968;
+	color: white;
+	border: none;
+	padding: 8px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+/*
+   Cambio de color cuando se pasa el mouse.
+*/
+.btn_arriba:hover {
+	background-color: #6f4e37;
+}
+/* ================= RESPONSIVE ================= */
+
+/*
+   Ajustes para pantallas pequeñas (tablets y celulares).
+   Se cambia la dirección del contenedor principal
+   para que el contenido se acomode en columna.
+*/
+@media (max-width: 768px) {
+	.contenedor_principal {
+		flex-direction: column;
+	}
+}
+/* ================= CONTACTO ================= */
+
+/*
+   Imagen superior de la sección contacto.
+   Se centra y se le agrega separación inferior.
+*/
+.contacto_imagen_superior {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+/*
+   Imagen decorativa con límite de tamaño
+   y sombra para que combine con el diseño general.
+*/
+.contacto_imagen_superior img {
+	width: 100%;
+	max-width: 700px;
+	border-radius: 12px;
+	box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/*
+   Formulario centrado con distribución vertical.
+*/
+.formulario {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+/*
+   Estilo de campos de entrada y textarea.
+*/
+.formulario input,
+.formulario textarea {
+	padding: 12px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	font-family: inherit;
+}
+
+/*
+   Mensaje verde que aparece al enviar la encuesta.
+*/
+.mensaje_exito {
+	background-color: #2e7d32;
+	color: white;
+	padding: 15px;
+	border-radius: 8px;
+	text-align: center;
+	font-weight: 600;
+	margin-top: 20px;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
