@@ -1,26 +1,151 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-}
+* {}
 
-header {
-    background-color: #6b3e26;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+body {}
 
-.menu {
-    list-style: none;
-    padding: 0;
-}
+.main {}
 
-.menu li {
-    display: inline;
-    margin: 0 15px;
-}
 
-.menu a {
-    text-decoration: none;
-    color: white;
-}
+/* Header */
+
+.header {}
+
+.contenedor_header {}
+
+.marca {}
+
+.logo_marca {}
+
+.texto_marca {}
+
+.nombre_marca {}
+
+.slogan_marca {}
+
+
+/* Fecha y hora */
+
+.datetime {}
+
+.etiqueta_datetime {}
+
+.valor_datetime {}
+
+/* Menú */
+
+.elementos {}
+
+.menu {}
+
+.item_menu {}
+
+.link_menu {}
+
+
+/* Sección principal */
+
+.principal {}
+
+.contenedor_principal {}
+
+.contenido_principal {}
+
+.titulo_principal {}
+
+.texto_principal {}
+
+
+/* Etiquetas */
+
+.etiquetas_principal {}
+
+.etiqueta {}
+
+
+/* Botónes principales */
+
+.links_principal {}
+
+.boton_ubicacion {}
+
+.boton_galeria {}
+
+
+/* Información lateral */
+
+.informacion_principal {}
+
+.titulo_informacion_principal {}
+
+.lista_informacion {}
+
+
+/* Contenedor general */
+
+.contenedor_main {}
+
+.seccion {}
+
+.header_seccion {}
+
+.titulo_seccion {}
+
+.subtitulo_seccion {}
+
+.bloque {}
+
+
+/* Slider */
+
+.slider {}
+
+
+/* Tarjeta de ubicación */
+
+.tarjeta_ubicacion {}
+
+.tarjeta_body {}
+
+.titulo_tarjeta {}
+
+.texto_tarjeta {}
+
+
+/* Horarios */
+
+.horarios {}
+
+.titulo_horarios {}
+
+.lista_horarios {}
+
+
+/* Información extra */
+
+.extras {}
+
+
+/* Mapa */
+
+.tarjeta_mapa {}
+
+.frame_mapa {}
+
+
+/* Footer */
+
+.footer {}
+
+.contenedor_footer {}
+
+.izquierda_footer {}
+
+.marca_footer {}
+
+.pequeno_footer {}
+
+.derecha_footer {}
+
+
+/* Botón para subir */
+
+.btn_arriba {}
