@@ -1,87 +1,126 @@
 <!DOCTYPE html>
+<!-- 
+   Declaración del documento HTML5.
+   Indica al navegador que se utilizará la versión moderna de HTML.
+-->
 <html lang="es">
 <head>
+	<!-- Permite caracteres especiales (acentos, ñ, etc.) -->
 	<meta charset="utf-8" />
+
+	<!-- Hace que el diseño sea responsive en móviles -->
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Título que aparece en la pestaña del navegador -->
 	<title>Tu Yo Cafe | Querétaro</title>
 
+	<!-- Hoja de estilos principal del proyecto -->
 	<link rel="stylesheet" href="css/estilos.css" />
 
-	<!-- bxSlider -->
+	<!-- Librería bxSlider (estilos del carrusel de imágenes) -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css" />
 
-	<!-- Tipografía -->
+	<!-- Optimización de carga para Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+	<!-- Tipografía principal del sitio -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
+<!-- 
+   id="top" permite que el botón "Arriba"
+   redirija al inicio de la página.
+-->
 <body id="top">
+
+	<!-- ================= HEADER ================= -->
 	<header class="header">
 		<div class="contenedor_header">
+
+			<!-- Marca: Logo + Nombre + Slogan -->
 			<div class="marca">
 				<div class="logo_marca">
+					<!-- Imagen del logo del café -->
 					<img src="html/img/logo.jpg" width="100" height="100">
 				</div>
+
 				<div class="texto_marca">
 					<h1 class="nombre_marca">Tu Yo Cafe</h1>
 					<p class="slogan_marca">Café, calma y buena vibra en Querétaro</p>
 				</div>
 			</div>
 
-			<!-- Fecha y hora -->
+			<!-- Fecha y hora dinámica (se actualiza con JavaScript) -->
 			<div class="datetime">
 				<span class="etiqueta_datetime">Fecha y hora:</span>
 				<span id="fechaHora" class="valor_datetime">(Añadir)</span>
 			</div>
 
-			<!-- Elementos principales del proyecto -->
+			<!-- Menú principal de navegación -->
 			<div class="elementos">
 				<ul class="menu">
-					<li class="item_menu"><a class="link_menu" href="index.html">INICIO</a></li>
-					<li class="item_menu"><a class="link_menu" href="nosotros.html">NOSOTROS</a></li>
-					<li class="item_menu"><a class="link_menu" href="contacto.html">CONTACTO</a></li>
+					<li class="item_menu">
+						<a class="link_menu" href="index.html">INICIO</a>
+					</li>
+					<li class="item_menu">
+						<a class="link_menu" href="html/nosotros.html">NOSOTROS</a>
+					</li>
+					<li class="item_menu">
+						<a class="link_menu" href="html/contacto.html">CONTACTO</a>
+					</li>
 				</ul>
 			</div>
+
 		</div>
 	</header>
 
+	<!-- ================= SECCIÓN PRINCIPAL (HERO) ================= -->
 	<section class="principal">
 		<div class="contenedor_principal">
+
+			<!-- Texto principal de bienvenida -->
 			<div class="contenido_principal">
 				<h2 class="titulo_principal">Tu lugar para reconectar contigo</h2>
+
 				<p class="texto_principal">
-					En <b>Tu Yo Cafe</b> preparamos café artesanal, bebidas frías y pan recién horneado. Pásale si quieres estudiar, trabajar o simplemente descansar un ratito.
+					En <b>Tu Yo Cafe</b> preparamos café artesanal, bebidas frías y pan recién horneado.
+					Pásale si quieres estudiar, trabajar o simplemente descansar un ratito.
 				</p>
 
+				<!-- Etiquetas destacadas del negocio -->
 				<div class="etiquetas_principal">
 					<span class="etiqueta">Wi-Fi</span>
 					<span class="etiqueta">Pet friendly</span>
 					<span class="etiqueta">Ambiente tranquilo</span>
 				</div>
 
+				<!-- Botones de navegación interna -->
 				<div class="links_principal">
 					<a class="boton_ubicacion" href="#ubicacion">Ver ubicación</a>
 					<a class="boton_galeria" href="#galeria">Ver galería</a>
 				</div>
 			</div>
 
+			<!-- Información rápida en forma de tarjeta lateral -->
 			<aside class="informacion_principal">
 				<h3 class="titulo_informacion_principal">Información rápida</h3>
+
 				<ul class="lista_informacion">
 					<li><b>Ciudad:</b> Querétaro, Qro.</li>
 					<li><b>Horario:</b> Lun–Vie 8:00–20:00 | Sáb–Dom 9:00–18:00</li>
-					<li><b>Dirección: </b>C. Francisco I. Madero 97B, Centro Histórico, Centro, 76000 Santiago de Querétaro, Qro.</li>
+					<li><b>Dirección:</b> C. Francisco I. Madero 97B, Centro Histórico, Centro, 76000 Santiago de Querétaro, Qro.</li>
 				</ul>
 			</aside>
+
 		</div>
 	</section>
 
+	<!-- ================= CONTENIDO PRINCIPAL ================= -->
 	<main class="main">
 		<div class="contenedor_main">
 
-			<!-- Slider -->
+			<!-- ================= GALERÍA (Slider) ================= -->
 			<section id="galeria" class="seccion">
 				<header class="header_seccion">
 					<h2 class="titulo_seccion">Galería</h2>
@@ -89,16 +128,17 @@
 				</header>
 
 				<div class="bloque">
-					<div class="slider">
-						<div><img src="html/img/cafe1.jpg"></div>
-						<div><img src="html/img/cafe2.jpg"></div>
-						<div><img src="html/img/cafe3.jpg"></div>
-						<div><img src="html/img/cafe4.jpg"></div>
-					</div>
+					<!-- Lista que bxSlider convierte en carrusel -->
+					<ul class="slider">
+						<li><img src="html/img/cafe1.jpg" alt="Café 1"></li>
+						<li><img src="html/img/cafe2.png" alt="Café 2"></li>
+						<li><img src="html/img/cafe3.jpg" alt="Café 3"></li>
+						<li><img src="html/img/cafe4.jpg" alt="Café 4"></li>
+					</ul>
 				</div>
 			</section>
 
-			<!-- Ubicación y horarios -->
+			<!-- ================= UBICACIÓN Y HORARIOS ================= -->
 			<section id="ubicacion" class="seccion">
 				<header class="header_seccion">
 					<h2 class="titulo_seccion">Ubicación y horarios</h2>
@@ -108,28 +148,35 @@
 				<div class="bloque">
 					<div class="tarjeta_ubicacion">
 						<div class="tarjeta_body">
-							<h3 class="titulo_tarjeta">Tu Yo Cafe</h3>
-							<p class="texto_tarjeta"><b>Dirección: </b>C. Francisco I. Madero 97B, Centro Histórico, Centro, 76000 Santiago de Querétaro, Qro.</p>
 
+							<h3 class="titulo_tarjeta">Tu Yo Cafe</h3>
+
+							<p class="texto_tarjeta">
+								<b>Dirección:</b> C. Francisco I. Madero 97B, Centro Histórico, Centro, 76000 Santiago de Querétaro, Qro.
+							</p>
+
+							<!-- Horarios organizados -->
 							<div class="horarios">
 								<h4 class="titulo_horarios">Horarios</h4>
 								<ul class="lista_horarios">
-									<li><span>Miercoles a Sábado </span><span>8:00 – 21:30</span></li>
-									<li><span>Domingo </span><span>9:00 – 21:00</span></li>
-									<li><span>Lunes </span><span>8:00 – 21:30</span></li>
+									<li><span>Miercoles a Sábado</span><span>8:00 – 21:30</span></li>
+									<li><span>Domingo</span><span>9:00 – 21:00</span></li>
+									<li><span>Lunes</span><span>8:00 – 21:30</span></li>
 								</ul>
 							</div>
 
+							<!-- Información adicional -->
 							<div class="extras">
-								<p><b>Referencia: </b>Banca afuera de local</p>
-								<p><b>Teléfono: </b>442 819 4748</p>
+								<p><b>Referencia:</b> Banca afuera de local</p>
+								<p><b>Teléfono:</b> 442 819 4748</p>
 							</div>
+
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<!-- Mapa -->
+			<!-- ================= MAPA ================= -->
 			<section class="seccion">
 				<header class="header_seccion">
 					<h2 class="titulo_seccion">Mapa</h2>
@@ -139,12 +186,17 @@
 				<div class="bloque">
 					<div class="tarjeta_mapa">
 						<div class="frame_mapa">
+
+							<!-- Mapa incrustado de Google Maps -->
 							<iframe 
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9254439847195!2d-100.395991!3d20.5911021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35bc16795b6d5%3A0xecc23adc0c521db2!2sTuyo%20Caf%C3%A9%20de%20especialidad!5e0!3m2!1ses-419!2smx!4v1772590033942!5m2!1ses-419!2smx"
-								width="600" height="450" style="border:0;" 
-								allowfullscreen="" loading="lazy" 
+								width="600" height="450"
+								style="border:0;"
+								allowfullscreen=""
+								loading="lazy"
 								referrerpolicy="no-referrer-when-downgrade">
 							</iframe>
+
 						</div>
 					</div>
 				</div>
@@ -153,42 +205,36 @@
 		</div>
 	</main>
 
-	<!-- Footer -->
+	<!-- ================= FOOTER ================= -->
 	<footer class="footer">
 		<div class="contenedor_footer">
+
+			<!-- Información izquierda -->
 			<div class="izquierda_footer">
 				<p class="marca_footer">Tu Yo Cafe — Querétaro</p>
 				<p class="pequeno_footer">© 2026. Todos los derechos reservados.</p>
 			</div>
 
+			<!-- Botón para regresar arriba -->
 			<div class="derecha_footer">
 				<button id="btnArriba" class="btn_arriba" type="button">
 					↑ Arriba
 				</button>
 			</div>
+
 		</div>
 	</footer>
 
-	<!-- jQuery -->
+	<!-- ================= SCRIPTS ================= -->
+
+	<!-- Librería jQuery (necesaria para bxSlider y tu JS) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-	<!-- bxSlider JS -->
+	<!-- Librería bxSlider (carrusel) -->
 	<script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
 
-	<!-- JS -->
+	<!-- Archivo JavaScript propio del proyecto -->
 	<script src="js/main.js"></script>
 
-	<!-- Inicializacion bxSlider -->
-	<script>
-		$(document).ready(function () {
-			$(".slider").bxSlider({
-				auto: true,
-				pause: 3000,
-				controls: true,
-				pager: true,
-				adaptiveHeight: true
-			});
-		});
-	</script>
 </body>
 </html>
