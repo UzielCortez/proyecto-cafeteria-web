@@ -1,63 +1,66 @@
 <!DOCTYPE html>
 <!-- 
-   Declaración del documento HTML5.
-   Indica al navegador que se utilizará la versión moderna de HTML.
+	Declaración del documento HTML5.
+	Indica al navegador que se utilizará la versión moderna de HTML.
 -->
+
 <html lang="es">
 <head>
 	<!-- Permite caracteres especiales (acentos, ñ, etc.) -->
 	<meta charset="utf-8" />
 
-	<!-- Hace que el diseño sea responsive en móviles -->
+	<!-- Hace que el diseño sea funcione en teléfonos -->
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!-- Título que aparece en la pestaña del navegador -->
 	<title>Tu Yo Cafe | Querétaro</title>
 
-	<!-- Hoja de estilos principal del proyecto -->
+	<!-- Estilos del proyecto -->
 	<link rel="stylesheet" href="css/estilos.css" />
 
-	<!-- Librería bxSlider (estilos del carrusel de imágenes) -->
+	<!-- Importación de la librería visual de bxSlider para el carrusel de imágenes -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css" />
 
-	<!-- Optimización de carga para Google Fonts -->
+	<!-- Precarga de Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	<!-- Tipografía principal del sitio -->
+	<!-- Carga de la tipografía principal -->
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <!-- 
-   id="top" permite que el botón "Arriba"
-   redirija al inicio de la página.
+	id="top" hace que el botón "Arriba"
+	pueda redirigir al inicio de la página
 -->
 <body id="top">
 
-	<!-- ================= HEADER ================= -->
+	<!-- Header -->
 	<header class="header">
 		<div class="contenedor_header">
 
-			<!-- Marca: Logo + Nombre + Slogan -->
+			<!-- Marca: logo + nombre + slogan -->
 			<div class="marca">
 				<div class="logo_marca">
+
 					<!-- Imagen del logo del café -->
 					<img src="html/img/logo.jpg" width="100" height="100">
 				</div>
 
+				<!-- Nombre y slogan -->
 				<div class="texto_marca">
 					<h1 class="nombre_marca">Tu Yo Cafe</h1>
 					<p class="slogan_marca">Café, calma y buena vibra en Querétaro</p>
 				</div>
 			</div>
 
-			<!-- Fecha y hora dinámica (se actualiza con JavaScript) -->
+			<!-- Fecha y hora dinámica que se actualiza con JavaScript -->
 			<div class="datetime">
 				<span class="etiqueta_datetime">Fecha y hora:</span>
 				<span id="fechaHora" class="valor_datetime">(Añadir)</span>
 			</div>
 
-			<!-- Menú principal de navegación -->
+			<!-- Otras páginas de la empresa -->
 			<div class="elementos">
 				<ul class="menu">
 					<li class="item_menu">
@@ -75,7 +78,7 @@
 		</div>
 	</header>
 
-	<!-- ================= SECCIÓN PRINCIPAL (HERO) ================= -->
+	<!-- Sección principal -->
 	<section class="principal">
 		<div class="contenedor_principal">
 
@@ -95,14 +98,14 @@
 					<span class="etiqueta">Ambiente tranquilo</span>
 				</div>
 
-				<!-- Botones de navegación interna -->
+				<!-- Accesos rápidos a contenido importante para el usuario -->
 				<div class="links_principal">
 					<a class="boton_ubicacion" href="#ubicacion">Ver ubicación</a>
 					<a class="boton_galeria" href="#galeria">Ver galería</a>
 				</div>
 			</div>
 
-			<!-- Información rápida en forma de tarjeta lateral -->
+			<!-- Información rápida sobre el negocio -->
 			<aside class="informacion_principal">
 				<h3 class="titulo_informacion_principal">Información rápida</h3>
 
@@ -116,11 +119,11 @@
 		</div>
 	</section>
 
-	<!-- ================= CONTENIDO PRINCIPAL ================= -->
+	<!-- Contenido principal -->
 	<main class="main">
 		<div class="contenedor_main">
 
-			<!-- ================= GALERÍA (Slider) ================= -->
+			<!-- Slider para la galería de imagenes -->
 			<section id="galeria" class="seccion">
 				<header class="header_seccion">
 					<h2 class="titulo_seccion">Galería</h2>
@@ -128,7 +131,8 @@
 				</header>
 
 				<div class="bloque">
-					<!-- Lista que bxSlider convierte en carrusel -->
+
+					<!-- Imagenes en lista que bxSlider convierte en carrusel -->
 					<ul class="slider">
 						<li><img src="html/img/cafe1.jpg" alt="Café 1"></li>
 						<li><img src="html/img/cafe2.png" alt="Café 2"></li>
@@ -138,7 +142,7 @@
 				</div>
 			</section>
 
-			<!-- ================= UBICACIÓN Y HORARIOS ================= -->
+			<!-- Ubicación y horarios -->
 			<section id="ubicacion" class="seccion">
 				<header class="header_seccion">
 					<h2 class="titulo_seccion">Ubicación y horarios</h2>
@@ -155,7 +159,7 @@
 								<b>Dirección:</b> C. Francisco I. Madero 97B, Centro Histórico, Centro, 76000 Santiago de Querétaro, Qro.
 							</p>
 
-							<!-- Horarios organizados -->
+							<!-- Horarios -->
 							<div class="horarios">
 								<h4 class="titulo_horarios">Horarios</h4>
 								<ul class="lista_horarios">
@@ -165,7 +169,7 @@
 								</ul>
 							</div>
 
-							<!-- Información adicional -->
+							<!-- Información importante -->
 							<div class="extras">
 								<p><b>Referencia:</b> Banca afuera de local</p>
 								<p><b>Teléfono:</b> 442 819 4748</p>
@@ -176,7 +180,7 @@
 				</div>
 			</section>
 
-			<!-- ================= MAPA ================= -->
+			<!-- Mapa -->
 			<section class="seccion">
 				<header class="header_seccion">
 					<h2 class="titulo_seccion">Mapa</h2>
@@ -205,7 +209,7 @@
 		</div>
 	</main>
 
-	<!-- ================= FOOTER ================= -->
+	<!-- Footer -->
 	<footer class="footer">
 		<div class="contenedor_footer">
 
@@ -225,15 +229,15 @@
 		</div>
 	</footer>
 
-	<!-- ================= SCRIPTS ================= -->
+	<!-- Scripts -->
 
-	<!-- Librería jQuery (necesaria para bxSlider y tu JS) -->
+	<!-- La librería jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-	<!-- Librería bxSlider (carrusel) -->
+	<!-- Carga de la funcionalidad del bxSlider para el carrusel -->
 	<script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
 
-	<!-- Archivo JavaScript propio del proyecto -->
+	<!-- Archivo JavaScript del proyecto -->
 	<script src="js/main.js"></script>
 
 </body>
