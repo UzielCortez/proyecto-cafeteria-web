@@ -5,3 +5,4 @@ Equipo 3:
 - Ricardo Uziel Cortez Ruiz
 - Luis Fernando Clavel Pizaña
 - Johan Abelardo Del Ángel González
+- Álvaro Corona Ruiz
