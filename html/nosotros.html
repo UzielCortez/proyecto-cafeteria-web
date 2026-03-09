@@ -4,23 +4,57 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Nosotros | Tu Yo Cafe</title>
+	<!-- Enlace a la hoja de estilos general del proyecto -->
 	<link rel="stylesheet" href="../css/estilos.css" />
+
+	<!-- Precarga de Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<!-- Carga de la tipografía principal -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+	<!-- Header -->
 	<header class="header">
 		<div class="contenedor_header">
-			<h1 class="nombre_marca">Tu Yo Cafe</h1>
-			<ul class="menu">
-				<li class="item_menu">
-					<a class="link_menu" href="../index.html">INICIO</a>
-				</li>
-				<li class="item_menu">
-					<a class="link_menu" href="nosotros.html">NOSOTROS</a>
-				</li>
-				<li class="item_menu">
-					<a class="link_menu" href="contacto.html">CONTACTO</a>
-				</li>
-			</ul>
+
+			<!-- Marca: logo + nombre + slogan -->
+			<div class="marca">
+				<div class="logo_marca">
+
+					<!-- Imagen del logo del café -->
+					<img src="img/logo.jpg" width="100" height="100">
+				</div>
+
+				<!-- Nombre y slogan -->
+				<div class="texto_marca">
+					<h1 class="nombre_marca">Tu Yo Cafe</h1>
+					<p class="slogan_marca">Café, calma y buena vibra en Querétaro</p>
+				</div>
+			</div>
+
+			<!-- Fecha y hora dinámica que se actualiza con JavaScript -->
+			<div class="datetime">
+				<span class="etiqueta_datetime">Fecha y hora:</span>
+				<span id="fechaHora" class="valor_datetime">(Añadir)</span>
+			</div>
+
+			<!-- Otras páginas de la empresa -->
+			<div class="elementos">
+				<ul class="menu">
+					<li class="item_menu">
+						<a class="link_menu" href="../index.html">INICIO</a>
+					</li>
+					<li class="item_menu">
+						<a class="link_menu" href="nosotros.html">NOSOTROS</a>
+					</li>
+					<li class="item_menu">
+						<a class="link_menu" href="contacto.html">CONTACTO</a>
+					</li>
+				</ul>
+			</div>
+
 		</div>
 	</header>
 
@@ -38,5 +72,11 @@
 			</section>
 		</div>
 	</main>
+
+	<!-- La librería jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Archivo JavaScript del proyecto -->
+	<script src="../js/main.js"></script>
 </body>
 </html>
